@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/changa"
+        android:text="DIR"
+        android:textColor="@color/my"
+        android:textSize="35sp"
+        tools:context=".FileBrowser" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:fontFamily="@font/secular_one"
+        android:onClick="selectDirectory"
+        android:text="SELECT"
+        android:textColor="@color/my" />
+
+    <TextView
+
+        android:id="@+id/current_path"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        tools:context=".FileBrowser" />
+
+    <ListView
+        android:id="@+id/file_browser_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ic_background"
+        android:divider="@color/my"
+        android:dividerHeight="2px" />
+
+
+</LinearLayout>
